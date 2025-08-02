@@ -1,8 +1,8 @@
 pipeline {
     agent any
-  triggers {
+    triggers {
         githubPush()
-  }
+      }
       tools {
         maven 'Maven 3'   // You must configure this tool in Jenkins
         jdk 'JDK 21'      // You must configure this tool in Jenkins
