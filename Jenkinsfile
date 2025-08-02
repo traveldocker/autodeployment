@@ -28,8 +28,8 @@ pipeline {
        stage('Deploy to Tomcat') {
             steps {
                 sh '''
-                    sudo cp target/sample.war /opt/tomcat/webapps/
-                    sudo chown tomcat:tomcat /opt/tomcat/webapps/sample.war
+                    sudo cp target/sample-war.war /opt/tomcat/webapps/
+                    sudo chown tomcat:tomcat /opt/tomcat/webapps/sample-war.war
                     sudo systemctl restart tomcat
                 '''
             }
